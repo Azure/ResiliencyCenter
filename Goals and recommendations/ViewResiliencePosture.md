@@ -73,7 +73,21 @@ To manually attest a resource, follow the below steps:
 
 ## Rediscovering resources
 
-Over time, there might be changes to your service group, such as resources being added or deleted. To ensure that your resiliency posture view reflects the latest state of the service group, you can trigger the 'Re-discover resources' action to ensure that new resources are also evaluated for their zone resiliency status.
+Over time, there might be changes to your service group, such as resources being added or deleted. To ensure that your resiliency posture view reflects the latest state of the service group, you can trigger the 'Re-discover resources' action to ensure that new resources are also evaluated for their zone resiliency status. 
+
+> [!IMPORTANT]
+>
+> - To rediscover resources, you must have Service Group Contributor permissions.
+> - Rediscovery evaluates only the resources visible to the user who starts the action. Different users with different access can produce different rediscovery results.
+>
+> Example:
+>
+> - If User 1 has access to resources A, B, and C and runs rediscovery, Resiliency Center will evaluate A, B, and C.
+> - If User 2 later runs rediscovery and has access only to resources B and C, Resiliency Center will evaluate only B and C.
+>
+> Recommendation:
+>
+> - Limit who can run rediscovery and ensure those users have access to the full set of service-group resources. This helps keep rediscovery results consistent and complete.
 
 ## Supported Solutions
 

@@ -27,7 +27,7 @@ Use the below quick links to start testing out various scenarios that are part o
 - [Tutorial 2 - Assign resilience goals to your service group](./Goals%20and%20recommendations/AssignGoals.md)
 - [Tutorial 3 - Review current protection posture of your service group](./Goals%20and%20recommendations/ViewResiliencePosture.md)
 - [Tutorial 4 - Review recommendations for your service groups](./Goals%20and%20recommendations/Recommendations.md)
-- (Coming soon) Review summary of resilience posture at-scale across your Azure estate
+- [Tutorial 5 - Review summary of resilience posture at-scale across your Azure estate]()
 - (Coming soon) Create and run a drill instance
 - [Troubleshooting and reporting issues](Troubleshooting.md)
 - [Frequently asked questions](FAQ.md)
