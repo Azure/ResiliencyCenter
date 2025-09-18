@@ -8,7 +8,7 @@ Some of the key capabilities of service groups are:
 - **Flexible Membership**: Service Groups allow resources from different subscriptions to be grouped together, providing a unified view and management capabilities. 
 - **Low Privilege Management**: Service Groups are designed to operate with minimal permissions, ensuring that users can manage resources without needing excessive access rights.
 
-[Learn more about Service Groups](https://learn.microsoft.com/azure/governance/service-groups/overview)
+[Learn more about Service Groups](https://learn.microsoft.com/azure/governance/service-groups/overview){:target="_blank"}
 
 ## Steps to create a service group to model your application
 
