@@ -95,7 +95,7 @@ The following table lists the Azure-supported solutions recognised by Resiliency
 
 | **Resource Type**       | **Detected Solution**                                  |
 |-------------------------|--------------------------------------------------------|
-| Azure VM                | Azure Site Recovery with zonal disaster recovery       |
+| Azure VM                | Azure Site Recovery with zonal disaster recovery (or) Manual attestation     |
 | Azure SQL DB            | Azure SQL DB Zone-redundancy                               |
 | Azure SQL MI            | Azure SQL MI Zone-redundancy|
 | Azure Cosmos DB         | Azure Cosmos DB Zone-redundancy |

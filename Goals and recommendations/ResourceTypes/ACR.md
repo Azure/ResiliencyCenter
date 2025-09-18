@@ -1,0 +1,3 @@
+# Azure Container Registry Zone Resiliency
+
+Zone redundancy is enabled by default for all registries in regions that support availability zones, making your resources more resilient automatically and at no additional cost. This enhancement applies to all service tiers, including Basic and Standard, and has been applied to both new and existing registries. [Learn more](https://learn.microsoft.com/azure/reliability/reliability-container-registry)
