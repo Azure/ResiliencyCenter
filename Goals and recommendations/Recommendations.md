@@ -1,4 +1,4 @@
-# Review Zone Resiliency Recommendations in Resiliency Center
+# Review Zone Resiliency Recommendations
 
 ## Overview
 
