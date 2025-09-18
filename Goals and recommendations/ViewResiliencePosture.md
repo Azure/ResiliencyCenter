@@ -108,3 +108,7 @@ The following table lists the Azure-supported solutions recognised by Resiliency
 | Azure Application Gateway         | Azure App Gateway Zone-redundancy |
 | Azure Firewall         | Azure Firewall Zone-redundancy |
 | Azure IP Address         | Azure IP Address Standard SKU Zone-redundancy |
+
+## Next steps
+
+[Review recommendations for your service group](./Recommendations.md)
