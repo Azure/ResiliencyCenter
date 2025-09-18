@@ -12,7 +12,7 @@ Enabling availability zones is a great way to increase resilience of your Cosmos
 
 - Serverless accounts can use availability zones, but this choice is only available during account creation. Existing accounts without availability zones cannot be converted to an availability zone configuration. For mission critical workloads, provisioned throughput is the recommended choice.
  
-- Understand that enabling availability zones isn't an account-wide choice. A single Cosmos DB account can span an arbitrary number of Azure regions, each of which can independently be configured to leverage availability zones and some regional pairs may not have availability zone support. This is important, as some regions don't yet support availability zones, but adding them to a Cosmos DB account won't prevent enabling availability zones in other regions configured for that account.  The billing model also reflects this possibility. For more information on SLA for Cosmos DB, see [Reliability in Cosmos DB for NoSQL](./reliability-cosmos-db-nosql.md#sla-improvements). To see which regions support availability zones, see [Azure regions with availability zone support](./regions-list.md).
+- Understand that enabling availability zones isn't an account-wide choice. A single Cosmos DB account can span an arbitrary number of Azure regions, each of which can independently be configured to leverage availability zones and some regional pairs may not have availability zone support. This is important, as some regions don't yet support availability zones, but adding them to a Cosmos DB account won't prevent enabling availability zones in other regions configured for that account.  The billing model also reflects this possibility. For more information on SLA for Cosmos DB, see [Reliability in Cosmos DB for NoSQL](https://learn.microsoft.com/azure/reliability/reliability-cosmos-db-nosql#sla-improvements). To see which regions support availability zones, see [Azure regions with availability zone support](https://learn.microsoft.com/azure/reliability/regions-list).
 
 ## Downtime requirements
 
@@ -27,20 +27,20 @@ Follow the steps below to enable availability zones for your account in select r
 
 # Azure portal
 
-1. Add a temporary region to your database account by following steps in [Add region to your database account](/azure/cosmos-db/how-to-manage-database-account#addremove-regions-from-your-database-account).
+1. Add a temporary region to your database account by following steps in [Add region to your database account](https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account#addremove-regions-from-your-database-account).
 
-2. If your Azure Cosmos DB account is configured with multi-region writes, skip to the next step. Otherwise, perform manual failover to the temporary region by following the steps in [Perform manual failover on an Azure Cosmos DB account](/azure/cosmos-db/how-to-manage-database-account?source=recommendations#manual-failover).
+2. If your Azure Cosmos DB account is configured with multi-region writes, skip to the next step. Otherwise, perform manual failover to the temporary region by following the steps in [Perform manual failover on an Azure Cosmos DB account](https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account?source=recommendations#manual-failover).
 
-3. Remove the region for which you would like to enable availability zones by following steps in [Remove region to your database account](/azure/cosmos-db/how-to-manage-database-account#addremove-regions-from-your-database-account).
+3. Remove the region for which you would like to enable availability zones by following steps in [Remove region to your database account](https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account#addremove-regions-from-your-database-account).
 
 4. Add back the region to be enabled with availability zones:
-    1. [Add region to your database account](/azure/cosmos-db/how-to-manage-database-account#addremove-regions-from-your-database-account).
+    1. [Add region to your database account](https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account#addremove-regions-from-your-database-account).
     2. Find the newly added region in the **Write region** column, and enable **Availability Zone** for that region. 
     3. Select **Save**.
 
-5. Perform failback to the availability zone-enabled region by following the steps in [Perform manual failover on an Azure Cosmos DB account](/azure/cosmos-db/how-to-manage-database-account?source=recommendations#manual-failover).
+5. Perform failback to the availability zone-enabled region by following the steps in [Perform manual failover on an Azure Cosmos DB account](https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account?source=recommendations#manual-failover).
 
-6. Remove the temporary region by following steps in [Remove region to your database account](/azure/cosmos-db/how-to-manage-database-account#addremove-regions-from-your-database-account).
+6. Remove the temporary region by following steps in [Remove region to your database account](https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account#addremove-regions-from-your-database-account).
 
 # Azure CLI
 
