@@ -11,11 +11,11 @@ With this tool, you can:
 
 ## Sign up for preview
 
-Sign up for the preview via [this form](https://forms.office.com/r/hzN515nbM9){:target="_blank"}. You will receive an email notification once you are enrolled for the preview.
+Sign up for the preview via [this form](https://forms.office.com/r/hzN515nbM9). You will receive an email notification once you are enrolled for the preview.
 
 ## Provide feedback
 
-Please fill up this [feedback form](https://learn.microsoft.com/azure/?product=popular){:target="_blank"}as you try out the preview. This will help us determine the pain points that can be overcome as we launch the next releases.
+Please fill up this [feedback form](https://learn.microsoft.com/azure/?product=popular) as you try out the preview. This will help us determine the pain points that can be overcome as we launch the next releases.
 
 ## Get started
 
@@ -32,4 +32,4 @@ Use the below quick links to start testing out various scenarios that are part o
 - [Troubleshooting and reporting issues](Troubleshooting.md)
 - [Frequently asked questions](FAQ.md)
 
-Please reach out to [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com){:target="_blank"} in case of any questions.
+Please reach out to [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com) in case of any questions.
