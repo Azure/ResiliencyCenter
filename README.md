@@ -15,7 +15,7 @@ Sign up for the preview via [this form](https://forms.office.com/r/hzN515nbM9). 
 
 ## Provide feedback
 
-Please fill up this [feedback form](https://learn.microsoft.com/azure/?product=popular) as you try out the preview. This will help us determine the pain points that can be overcome as we launch the next releases.
+Please fill up this feedback form (link TBA) as you try out the preview. This will help us determine the pain points that can be overcome as we launch the next releases.
 
 ## Get started
 
