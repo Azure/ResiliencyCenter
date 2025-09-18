@@ -6,7 +6,7 @@ With this tool, you can:
 
 - Set resiliency goals for your applications
 - Receive detailed recommendations to meet your goals
-- (Coming soon) Review summary of resilience posture across your Azure estate from a single pane of glass
+- Review summary of resilience posture across your Azure estate from a single pane of glass
 - (Coming soon) Run simulated outage drills to validate outage readiness for your applications
 
 ## Sign up for preview

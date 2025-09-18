@@ -2,8 +2,7 @@
 
 This guide describes how to update your Azure SQL Database for zone redundancy with [availability zones](/azure/reliability/availability-zones-overview).
 
-Enabling zone redundancy for Azure SQL Database guarantees high availability, making your databases and elastic pools resilient to a larger set of failures, such as catastrophic datacenter outages, without any changes of the application logic.  When zone redundancy is enabled, your database utilizes availability zones to replicate data across multiple physical locations within a single Azure region.  
-
+Enabling zone redundancy for Azure SQL Database guarantees high availability, making your databases and elastic pools resilient to a larger set of failures, such as catastrophic datacenter outages, without any changes of the application logic.  When zone redundancy is enabled, your database utilizes availability zones to replicate data across multiple physical locations within a single Azure region.
 
 ## Prerequisites
 
@@ -182,13 +181,13 @@ To create a geo-replica of the database:
 
 You can use Azure PowerShell or the Azure CLI or the [REST API](/rest/api/sql/databases/get) to check the `ZoneRedundant` property for a database.
 
-### [Portal](#tab/portal)
+### Portal
 
 1. In the Azure portal, navigate to your Azure SQL Database.
 2. Under **Settings**, select **Compute + Storage**.
 3. Check the value of the **Would you like to make this database zone redundant?** setting.
 
-### [Azure PowerShell](#tab/powershell)
+### Azure PowerShell
 
 Use the following example command to check the value of `ZoneRedundant` property for a database, for example the `master` database.
 
@@ -196,7 +195,7 @@ Use the following example command to check the value of `ZoneRedundant` property
 Get-AzSqlDatabase -ResourceGroupName "myResourceGroup" -ServerName "myServerName" -DatabaseName "master"
 ```
 
-### [Azure CLI](#tab/cli)
+### Azure CLI
 
 Use the following example command to check the value of `ZoneRedundant` property for a database, for example the `master` database.
 
@@ -204,7 +203,7 @@ Use the following example command to check the value of `ZoneRedundant` property
 az sql db show --resource-group "myResourceGroup" --server "myServerName" --name master
 ```
 
-### [REST API](#tab/API)
+### REST API
 
 See [Databases - Get API](/rest/api/sql/2022-05-01-preview/databases/get?tabs=HTTP) and view the `properties.zoneRedundant` property.
 
