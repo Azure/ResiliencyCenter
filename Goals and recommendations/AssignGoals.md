@@ -19,7 +19,7 @@ Before assigning goals, ensure the following:
 
 There are a few limitations to be aware of:
 
-- Goals **cannot** be assigned to service groups with **more than 500 resources**.
+- Goals **cannot** be assigned to service groups with **500 or more resources**.
 - Goals **cannot** be assigned to service groups with **more than two levels of sub-nesting** (i.e., a child service group that contains another child service group).
 
 ---

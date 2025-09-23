@@ -1,23 +1,23 @@
 # Azure SQL DB Zone Resiliency
 
-This guide describes how to update your Azure SQL Database for zone redundancy with [availability zones](/azure/reliability/availability-zones-overview).
+This guide describes how to update your Azure SQL Database for zone redundancy with availability zones.
 
 Enabling zone redundancy for Azure SQL Database guarantees high availability, making your databases and elastic pools resilient to a larger set of failures, such as catastrophic datacenter outages, without any changes of the application logic.  When zone redundancy is enabled, your database utilizes availability zones to replicate data across multiple physical locations within a single Azure region.
 
 ## Prerequisites
 
-Before you enable availability zone support, ensure that your Azure SQL Database is in a supported service tier and deployment model. Make sure that your tier and model is offered in a [region that supports availability zones](/azure/reliability/regions-list).
+Before you enable availability zone support, ensure that your Azure SQL Database is in a supported service tier and deployment model. Make sure that your tier and model is offered in a [region that supports availability zones](https://learn.microsoft.com/azure/reliability/regions-list).
 
 | Service tier | Deployment model | Zone redundancy availability |
 |-----|------|------|
-| Premium  | Single database or Elastic Pool | [All regions that support availability zones](/azure/reliability/regions-list)|
-| Business Critical | Single database or Elastic Pool | [All regions that support availability zones](/azure/reliability/regions-list) |
-| General Purpose  | Single database or Elastic Pool | [Selected regions that support availability zones](high-availability-sla.md?view=azuresql-db&preserve-view=true#general-purpose-service-tier-zone-redundant-availability)|
-| Hyperscale | Single database | [All regions that support availability zones](/azure/reliability/regions-list) |
+| Premium  | Single database or Elastic Pool | [All regions that support availability zones](https://learn.microsoft.com/azure/reliability/regions-list)|
+| Business Critical | Single database or Elastic Pool | [All regions that support availability zones](https://learn.microsoft.com/azure/reliability/regions-list) |
+| General Purpose  | Single database or Elastic Pool | [Selected regions that support availability zones](https://learn.microsoft.com/azure/azure-sql/database/high-availability-sla-local-zone-redundancy?view=azuresql-db&preserve-view=true#general-purpose-service-tier-zone-redundant-availability)|
+| Hyperscale | Single database | [All regions that support availability zones](https://learn.microsoft.com/azure/reliability/regions-list) |
 
 ## Downtime requirements
 
-Enabling zone redunancy for Premium, Business Critical, and General Purpose service tier is an online operation with a brief disconnect. If you have implemented [retry logic for standard transient errors](troubleshoot-common-connectivity-issues.md?view=azuresql-db&preserve-view=true#retry-logic-for-transient-errors), you won't notice the failover. 
+Enabling zone redunancy for Premium, Business Critical, and General Purpose service tier is an online operation with a brief disconnect. If you have implemented [retry logic for standard transient errors](https://learn.microsoft.com/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql-db&preserve-view=true#retry-logic-for-transient-errors), you won't notice the failover. 
 
 For Hyperscale service tier, zone redundancy support can only be specified during database creation and can't be modified once the resource is provisioned. If you wish to move to availability zone support, you'll need to transfer the data with database copy, point-in-time restore, or geo-replica. If the target database is in a different region than the source or if the database backup storage redundancy for the target differs from the source database, then downtime is proportional to the size of the data operation.  
 
@@ -75,7 +75,7 @@ Use Azure CLI to run the following command (replace the placeholders in `<>` wit
 
 ### REST API
 
-To enable zone redundancy, see [Databases - Create Or Update API](/rest/api/sql/2022-05-01-preview/databases/create-or-update?tabs=HTTP) and use the `properties.zoneRedundant` property.
+To enable zone redundancy, see [Databases - Create Or Update API](https://learn.microsoft.com/rest/api/sql/databases/create-or-update?view=rest-sql-2023-08-01&tabs=HTTP) and use the `properties.zoneRedundant` property.
 
 ---
 
@@ -98,7 +98,7 @@ To enable zone redundancy, see [Databases - Create Or Update API](/rest/api/sql/
 
 6. To verify that zone redundancy is enabled, select **Configure** and then select **Pool settings**.
 
-7. The zone redundant option should be set to **Yes**.   
+7. The zone redundant option should be set to **Yes**.
 
 ### PowerShell
 
@@ -128,7 +128,7 @@ Use Azure CLI to run the following command (replace the placeholders in `<>` wit
 
 ### REST API
 
-To enable zone redundancy, see [Elastic Pools - Create Or Update API](/rest/api/sql/2022-05-01-preview/elastic-pools/create-or-update?tabs=HTTP). 
+To enable zone redundancy, see [Elastic Pools - Create Or Update API](https://learn.microsoft.com/rest/api/sql/elastic-pools/create-or-update?view=rest-sql-2023-08-01&tabs=HTTP). 
 
 ---
 
@@ -150,17 +150,17 @@ For the Hyperscale service tier, zone redundancy support can only be specified d
 
 #### Database copy
 
-To create a database copy and enable zone redundancy with Azure portal, PowerShell, or Azure CLI, follow the instructions in [copy a transactionally consistent copy of a database in Azure SQL Database](database-copy.md?view=azuresql-db&preserve-view=true#copy-a-database).
+To create a database copy and enable zone redundancy with Azure portal, PowerShell, or Azure CLI, follow the instructions in [copy a transactionally consistent copy of a database in Azure SQL Database](https://learn.microsoft.com/azure/azure-sql/database/database-copy?view=azuresql-db&preserve-view=true&tabs=azure-portal#copy-a-database).
 
 #### Point-in-time restore
 
-To create a point-in-time database restore and enable zone redundancy with Azure portal, PowerShell, or Azure CLI, follow the instructions in [Point-in-time restore](recovery-using-backups.md?view=azuresql-db&preserve-view=true#point-in-time-restore).
+To create a point-in-time database restore and enable zone redundancy with Azure portal, PowerShell, or Azure CLI, follow the instructions in [Point-in-time restore](https://learn.microsoft.com/azure/azure-sql/database/recovery-using-backups?view=azuresql-db&preserve-view=true&tabs=azure-portal#point-in-time-restore).
 
 ##### Geo-replica
 
 To create a geo-replica of the database:
 
-1. Follow the instructions with Azure portal, PowerShell, or Azure CLI in [Configure active geo-replication and failover (Azure SQL Database)](active-geo-replication-configure-portal.md?view=azuresql-db&preserve-view=true) and enable zone redundancy under **Compute + Storage**
+1. Follow the instructions with Azure portal, PowerShell, or Azure CLI in [Configure active geo-replication and failover (Azure SQL Database)](https://learn.microsoft.com/azure/azure-sql/database/active-geo-replication-configure-portal?view=azuresql-db&preserve-view=true&tabs=portal) and enable zone redundancy under **Compute + Storage**
 
 2. The replica is seeded, and the time taken for seeding the data depends upon size of source database. You can monitor the status of seeding in the Azure portal or by running the following TSQL queries on the replica database:
 
@@ -170,8 +170,8 @@ To create a geo-replica of the database:
     ```
 
 3. Once the database seeding is finished, perform a planned (no data loss) failover to make the zone redundant target database as primary. 
-   - Use the [sys.dm_geo_replication_link_status](/sql/relational-databases/system-dynamic-management-views/sys-dm-geo-replication-link-status-azure-sql-database?view=azuresqldb-current&preserve-view=true) to view the status of the geo-replication state. The `replication_state_desc` is `CATCH_UP` when the secondary database is in a transactionally consistent state. 
-   - In the [sys.dm_operation_status](/sql/relational-databases/system-dynamic-management-views/sys-dm-operation-status-azure-sql-database?view=azuresqldb-current&preserve-view=true) dynamic management view, look for `state_desc` to be `COMPLETED` when the seeding operation has completed.
+   - Use the [sys.dm_geo_replication_link_status](https://learn.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-geo-replication-link-status-azure-sql-database?view=azuresqldb-current&preserve-view=true) to view the status of the geo-replication state. The `replication_state_desc` is `CATCH_UP` when the secondary database is in a transactionally consistent state. 
+   - In the [sys.dm_operation_status](https://learn.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-operation-status-azure-sql-database?view=azuresqldb-current&preserve-view=true) dynamic management view, look for `state_desc` to be `COMPLETED` when the seeding operation has completed.
 
 4. Update the server name in the connection strings for the application to reflect the new zone redundant database.
 
@@ -179,7 +179,7 @@ To create a geo-replica of the database:
 
 ## Validate zone redundancy
 
-You can use Azure PowerShell or the Azure CLI or the [REST API](/rest/api/sql/databases/get) to check the `ZoneRedundant` property for a database.
+You can use Azure PowerShell or the Azure CLI or the [REST API](https://learn.microsoft.com/rest/api/sql/databases/get?view=rest-sql-2023-08-01&tabs=HTTP) to check the `ZoneRedundant` property for a database.
 
 ### Portal
 
@@ -205,6 +205,6 @@ az sql db show --resource-group "myResourceGroup" --server "myServerName" --name
 
 ### REST API
 
-See [Databases - Get API](/rest/api/sql/2022-05-01-preview/databases/get?tabs=HTTP) and view the `properties.zoneRedundant` property.
+See [Databases - Get API](https://learn.microsoft.com/rest/api/sql/databases/create-or-update?view=rest-sql-2023-08-01&tabs=HTTP) and view the `properties.zoneRedundant` property.
 
 ---
