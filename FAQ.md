@@ -63,5 +63,4 @@ Currently, there's no way to convert Microsoft (field-defined) workloads into Se
 
 ### How much time will it take to create Service Groups and set goals before I start seeing recommendations?
 
-> [!NOTE]
-> It can take around 2 hours for the recommendations for the assigned goal to be visible after Service Group is created.
+It can take around 2 hours for the recommendations for the assigned goal to be visible after Service Group is created.
