@@ -36,17 +36,17 @@ To create a service group in the Azure portal:
    > [!NOTE]
    > The root service group is automatically created using the Microsoft Entra ID as its identifier. If you're unsure which parent to select, choose the **Root Service Group**. This group's ID matches your tenant's ID, in the format `Microsoft.Management/serviceGroups[tenantId]`.
 
-![Screenshot of the Basics page for creating a new service group](./img/01-Create-SG.png)
+    ![Screenshot of the Basics page for creating a new service group](./img/01-Create-SG.png)
 
 5. Select **Next** to proceed.
 
 6. On the **Members** tab, add the initial set of resources that should be part of your service group. You can select individual resources or a subscription/resource group.
 
-![Screenshot of the Members page for creating a new service group](./img/02-Add-Members-SG.png)
+    ![Screenshot of the Members page for creating a new service group](./img/02-Add-Members-SG.png)
 
 7. On the **Review + create** tab, review your settings, then select **Create** to finalize the service group.
 
-![Screenshot of the Review page for creating a new service group](./img/03-SG-Review-Create.png)
+    ![Screenshot of the Review page for creating a new service group](./img/03-SG-Review-Create.png)
 
 ## Add members to an existing service group
 
@@ -63,9 +63,15 @@ To add members, you must have:
 
 1. Navigate to the service group you created and select the **Members** tab.
 
+    ![Screenshot of the Members page for an existing service group](./img/04-Add-Members-2-SG.png)
+
 2. Select **Add members**, then choose the **Resources** option. The resource selection pane opens.
 
+    ![Screenshot of the Members page for an existing service group](./img/04-Add-Members-2-SG.png)
+
 3. Use filters (such as subscription, resource group, tags, or resource types) to find and select the relevant resources.
+
+    ![Screenshot of resource addition page for an existing service group](./img/05-Select-Resources-SG.png)
 
 4. After selecting the required resources, submit your selection. You can monitor the addition process through notifications, and the newly added members appear on the **Members** page.
 
