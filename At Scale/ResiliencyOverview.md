@@ -43,13 +43,21 @@ To view which resources are resilient and non-resilient to zone outages, follow 
 To create a service group from within the resource resiliency experiences, follow these steps:
 
 1. Navigate to the **Resource resiliency** view under Resiliency center.
+
     ![Screenshot of ABCC Resiliency Resource List View](../img/10-ABCC-Resource-Resiliency-List.png)
+
 2. Apply filters as needed and select the resources that you want to group into an application. Select **Create Service group**.
+
     ![Screenshot of ABCC Resiliency Resource Selection View](../img/12-ABCC-Resource-Selection.png)
+
 3. Enter the name of the service group and the parent under which it should be created.
+
     ![Screenshot of SG Create Basics View](../img/01-Create-SG.png)
+
 4. In the next screen, you'll see the list of selected resources pre-populated. Review and proceed.
+
     ![Screenshot of SG Create Members View](../img/13-SG-Members-PreSelected.png)
+
 5. Once the service group is created, you can see it appear in the Service Group level Resiliency summary. You need to assign goals to the service group for the zone resiliency evaluation to be completed.
 
 ## Service group-level resiliency management
