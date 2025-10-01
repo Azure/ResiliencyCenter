@@ -13,21 +13,16 @@ With this tool, you can:
 
 Sign up for the preview via [this form](https://forms.office.com/r/hzN515nbM9). You will receive an email notification once you are enrolled for the preview.
 
-## Provide feedback
-
-Please fill up this feedback form (link TBA) as you try out the preview. This will help us determine the pain points that can be overcome as we launch the next releases.
-
 ## Get started
 
 Use the below quick links to start testing out various scenarios that are part of the preview. It is recommended to start with the 'Review pre-requisites' page. Each page has a 'Next step' section that will help you sequentially navigate through the remaining sections of the documentation and try out each scenario.
 
 - [Review pre-requisities](Prerequisites.md)
-- [Review supported scenarios](SupportMatrix.md)
 - [Tutorial 1 - Create a service group to represent your application](CreateServiceGroup.md)
 - [Tutorial 2 - Assign resilience goals to your service group](./Goals%20and%20recommendations/AssignGoals.md)
 - [Tutorial 3 - Review current protection posture of your service group](./Goals%20and%20recommendations/ViewResiliencePosture.md)
 - [Tutorial 4 - Review recommendations for your service groups](./Goals%20and%20recommendations/Recommendations.md)
-- [Tutorial 5 - Review summary of resilience posture at-scale across your Azure estate]()
+- [Tutorial 5 - Review summary of resilience posture at-scale across your Azure estate](./At%20Scale/ResiliencyOverview.md)
 - (Coming soon) Create and run a drill instance
 - [Troubleshooting and reporting issues](Troubleshooting.md)
 - [Frequently asked questions](FAQ.md)
