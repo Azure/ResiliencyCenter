@@ -42,11 +42,11 @@ To create a service group in the Azure portal:
 
 6. On the **Members** tab, add the initial set of resources that should be part of your service group. You can select individual resources or a subscription/resource group.
 
-:::image type="content" source="./img/02-Add-Members-SG.png" alt-text="Screenshot of the Members page for creating a new service group" Lightbox="./img/02-Add-Members-SG.png":::
+![Screenshot of the Members page for creating a new service group](./img/02-Add-Members-SG.png)
 
 7. On the **Review + create** tab, review your settings, then select **Create** to finalize the service group.
 
-:::image type="content" source="./img/03-SG-Review-Create.png" alt-text="Screenshot of the Review page for creating a new service group" Lightbox="./img/03-SG-Review-Create.png":::
+![Screenshot of the Review page for creating a new service group](./img/03-SG-Review-Create.png)
 
 ## Add members to an existing service group
 
