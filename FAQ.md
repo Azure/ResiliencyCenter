@@ -18,9 +18,7 @@ Its unique value is the goal-based view: customers can see exactly which recomme
 
 - Resiliency Center is one experience inside Operations Center
 - The Resiliency Center UI and data model are replicated across Resiliency Center and Operations Center, ensuring data consistency and a seamless experience across products
-
-> [!NOTE]
-> Advisor is comprehensive across pillars. Resiliency Center is goal-driven and application-focused on resiliency. Operations Center is the umbrella platform that integrates these experiences alongside other operational capabilities.
+- Advisor is comprehensive across pillars. Resiliency Center is goal-driven and application-focused on resiliency. Operations Center is the umbrella platform that integrates these experiences alongside other operational capabilities.
 
 ### What is the incremental value of using Resiliency Center?
 
