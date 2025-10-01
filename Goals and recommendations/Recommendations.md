@@ -2,7 +2,7 @@
 
 ## Overview
 
-Resilience Manager provides zone redundancy (ZR) recommendations to help improve the availability and resiliency of Azure services. This guide explains how to interpret and act on these recommendations across compute, container, data, and networking resources.
+Resiliency Center provides zone redundancy (ZR) recommendations to help improve the availability and resiliency of Azure services. This guide explains how to interpret and act on these recommendations across compute, container, data, and networking resources.
 
 ---
 

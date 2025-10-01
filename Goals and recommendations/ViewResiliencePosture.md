@@ -21,7 +21,6 @@ Once goals are assigned to your service group, the resilience summary displays t
 >
 > - You need **Service Group Reader** permissions to view the zonal resilience summary.
 > - The summary includes resources under the service group and its child service groups.
-> - **Container resource types** (e.g., subscriptions, resource groups) added directly to the service group are currently **excluded** from evaluation. This limitation will be lifted in future releases.
 > - Newly added resources are **not automatically refreshed** post goal assignment. Re-assigning goals is required to include them. This limitation will be addressed in future updates.
 
 ---
