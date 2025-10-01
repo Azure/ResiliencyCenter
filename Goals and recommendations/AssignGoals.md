@@ -1,6 +1,6 @@
 # How to Assign Goals to Your Service Group
 
-To understand your service group's resiliency posture and receive tailored recommendations, you must first assign goals. This guide walks you through the prerequisites, supported scenarios, and step-by-step instructions for assigning goals in Resilience Manager.
+To understand your service group's resiliency posture and receive tailored recommendations, you must first assign goals. This guide walks you through the prerequisites, supported scenarios, and step-by-step instructions for assigning goals in Resiliency Center.
 
 > [!NOTE]
 > The current release of Resilience Manager supports only **zonal resilience** goals. Future updates will include support for **regional resilience** (disaster recovery), **cyber resiliency**, and more.
@@ -20,7 +20,6 @@ Before assigning goals, ensure the following:
 There are a few limitations to be aware of:
 
 - Goals **cannot** be assigned to service groups with **500 or more resources**.
-- Goals **cannot** be assigned to service groups with **more than two levels of sub-nesting** (i.e., a child service group that contains another child service group).
 
 ---
 
