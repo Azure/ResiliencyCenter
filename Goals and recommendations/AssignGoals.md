@@ -30,8 +30,10 @@ Follow these steps to assign goals to your service group:
 1. Navigate to your **Service Group**.
 2. Select the **Goals and recommendations** tab.
 3. Click the **Assign goals** tile.
+    ![Screenshot of Service Group Goals page](../img/06-SG-No-Goals.png)
 4. A confirmation blade will appear. Click **Save** to confirm.
-5. The system will begin discovering resources in the service group. This may take a short while.
+    ![Screenshot of Service Group Goals page](../img/06-SG-No-Goals.png)
+5. The system will begin assigning resources as well as discovering resources in the service group. This may take a few minutes to complete.
 6. Once discovery is complete, a **summary of your protection posture** and **recommendations** will be displayed.
 
 > [!TIP]
