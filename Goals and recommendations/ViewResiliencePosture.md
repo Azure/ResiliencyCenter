@@ -1,6 +1,6 @@
 # How to view the Resiliency Posture of your Service Group
 
-This article explains how to interpret the **resilience summary view** of your service group in Resiliency Center. It covers key concepts, supported scenarios, and how to **exclude or manually attest resources** to improve the accuracy of your resilience posture and receive more targeted recommendations.
+This article explains how to interpret the **resiliency summary view** of your service group in Resiliency Center. It covers key concepts, supported scenarios, and how to **exclude or manually attest resources** to improve the accuracy of your resilience posture and receive more targeted recommendations.
 
 ---
 
