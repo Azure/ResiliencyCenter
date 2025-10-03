@@ -11,7 +11,7 @@
     Invoke-AzRestMethod -Path /providers/Microsoft.AzureResilienceManagement/register?api-version=2021-04-01 -Method POST #Check for successful registration (status code 200)
     ```
 
-4. There are certain **RBAC** (role based access control) requirements for each scenario. These have been detailed in the [access requirements](RBAC.md) section. Depending on the scenario you wish to try out, the access requirements vary. You can either choose to setup all the required permissions before trying out the product, or set them up in phases as and when you try out a particular capability. Each tutorial article provides a list of permissions needed for using that specific capability.
+4. There are certain **RBAC** (role based access control) requirements for each scenario. These have been detailed in the [access requirements](rbac.md) section. Depending on the scenario you wish to try out, the access requirements vary. You can either choose to setup all the required permissions before trying out the product, or set them up in phases as and when you try out a particular capability. Each tutorial article provides a list of permissions needed for using that specific capability.
 
 5. Once the test resources have been identified, ensure that these have been organized into a **service group** that represents your test application. The link below guides you through the steps to create a service group.
 
