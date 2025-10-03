@@ -108,4 +108,4 @@ For step-by-step implementation guidance, see the [Resource type implementation 
 
 ## Next steps
 
-[Review recommendations for your service group](./Recommendations.md)
+[Review summary of resilience posture at-scale across your Azure estate](../At%20Scale/ResiliencyOverview.md)
