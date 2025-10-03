@@ -121,4 +121,4 @@ The following table lists the Azure-supported solutions recognised by Resiliency
 
 ## Next steps
 
-[Review summary of resilience posture at-scale across your Azure estate](../At%20Scale/ResiliencyOverview.md)
+[Review recommendations for your service group](./Recommendations.md)
