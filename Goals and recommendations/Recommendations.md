@@ -105,3 +105,7 @@ For step-by-step implementation guidance, see the [Resource type implementation 
 - **Evaluation Logic**:
   - Checks AZ deployment.
 - **Redeployment/Downtime**: Yes
+
+## Next steps
+
+[Review recommendations for your service group](./Recommendations.md)
