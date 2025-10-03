@@ -69,8 +69,12 @@ Once you've created the required service groups and assigned goals, you can view
 
    - **Zone resilient service groups**: Service groups where all resources (that aren't excluded) are configured with zone resiliency or manually attested by the user.
    - **Non-zone resilient service groups**: Service groups where one or more resources aren't configured for zone resiliency.
+   - **Goals not assigned**: Service groups where goals are not assigned yet.
    - **Not evaluated service groups**: Service groups where one or more resources aren't supported by Resiliency center and couldn't be evaluated. If there's a mixture of non-resilient and non-supported resources in the service group, the service group gets marked as non-resilient directly.
+   ![Screenshot of ABCC SG summary tile](../img/23-ABCC-SG-Summary.png)
 3. Select the tile to go to a list view of service groups where you can view the number of resources per service group that are zone resilient. Navigate to the service group to view more detailed information about that service group, and to [include or exclude resources](../Goals%20and%20recommendations/ViewResiliencePosture.md#scenario-1-exclude-non-critical-resources), [manually attest resources](../Goals%20and%20recommendations/ViewResiliencePosture.md#scenario-2-manually-attest-resources), and [review recommendations](../Goals%20and%20recommendations/Recommendations.md) generated for that service group.
+
+    ![Screenshot of SG List view](../img/24-ABCC-SG-List.png)
 
 > [!IMPORTANT]
 > If a non-resilient resource in a service group is manually attested by the user, it appears as resilient in the service group view, but still appears as non-resilient in the resource-level resiliency view. This issue will be addressed in future releases.

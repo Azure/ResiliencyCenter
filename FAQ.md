@@ -2,7 +2,7 @@
 
 ## Product connections and scope
 
-### How are Business Continuity center, Advisor, and Operations Center connected?
+### How are Resiliency Center, Advisor, and Operations Center connected?
 
 **Advisor** provides recommendations across all Well-Architected Framework (WAF) pillars beyond just Reliability. It's the entry point for customers who want a holistic view of how to improve reliability, security, cost efficiency, and more.
 
