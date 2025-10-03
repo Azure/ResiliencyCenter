@@ -21,7 +21,7 @@ The resource count reflects all the resources under the service group, which the
 
 > [!NOTE]
 >
-> - You need **Service Group Reader** permissions to view the zonal resilience summary.
+> - You need **Service Group Reader** permissions to view the zonal resilience summary. You also need Reader access to the **resources** for which zone resiliency status needs to be viewed.
 > - Newly added resources are **not automatically refreshed** post goal assignment. [Re-discovery](#rediscovering-resources) is required to include them. This limitation will be addressed in future updates.
 
 ---
