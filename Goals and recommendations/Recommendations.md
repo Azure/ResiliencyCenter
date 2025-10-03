@@ -8,10 +8,13 @@ Resiliency Center provides zone redundancy (ZR) recommendations to help improve 
 
 ## Viewing recommendations
 
-1. **Before goals are set (Day 0):** You will see a single, service-group level recommendation that prompts you to [assign goals](AssignGoals.md). Follow the link to configure objectives for the service group.
+1. **Before goals are set (Day 0):** You will see a single, service-group level recommendation that prompts you to [assign goals](AssignGoals.md). Follow the link to assign goals for the service group.
 2. **After goals are assigned:** Resiliency Center evaluates supported resources in the service group and surfaces resource-level recommendations for items that do not meet the assigned goals (for example, missing zone resiliency).
+    ![Screenshot of recommendations list under SG](../img/20-SG-Recommendations-List.png)
 3. **Inspect and act on recommendations:** Select any recommendation to open the recommendation details page. Details include the impacted resource(s), why the recommendation was raised, and step-by-step remediation guidance you can follow to resolve the issue or mark the resource as exempt or manually attested.
-4. **[New] Review cost of implementing recommendation**: The new preview feature in Azure Advisor helps improve visibility into potential cost increases by surfacing qualitative cost indicators - High, Medium, or Low - alongside descriptions of the factors that influence costs. For selected recommendations, cost implication labels and explanations clarify whether a change is likely to result in a high, medium or low impact on spending. This enhancement reduces uncertainty and empowers teams to balance reliability, performance, and cost more effectively. [Understand qualitative cost indicators for zone resiliency recommendations](#understanding-qualitative-cost-indicators) 
+    ![Screenshot of recommendation details view](../img/21-Recommendation-Details-View.png)
+4. **[New] Review cost of implementing recommendation**: The new preview feature in Azure Advisor helps improve visibility into potential cost increases by surfacing qualitative cost indicators - High, Medium, or Low - alongside descriptions of the factors that influence costs. For selected recommendations, cost implication labels and explanations clarify whether a change is likely to result in a high, medium or low impact on spending. This enhancement reduces uncertainty and empowers teams to balance reliability, performance, and cost more effectively. [Understand qualitative cost indicators for zone resiliency recommendations](#understanding-qualitative-cost-indicators).
+    ![Screenshot of recommendation details view with cost highlighted](../img/22-Recommendation-Details-View-Cost.png)
 
 > [!NOTE]
 >
