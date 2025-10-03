@@ -1,6 +1,6 @@
 # Role Based Access Control (RBAC) Requirements for Resiliency Center scenarios
 
-The following table lists the minimum access requirements for a user to achieve specific resiliency management scenarios.
+The following table lists the minimum access requirements for a user to achieve specific resiliency management requirements.
 
 | Scenario | Min Access Requirements |
 |----------|--------------------------|
