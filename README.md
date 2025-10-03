@@ -24,7 +24,7 @@ Use the below quick links to start testing out various scenarios that are part o
 - [Tutorial 4 - Review recommendations for your service groups](./Goals%20and%20recommendations/Recommendations.md)
 - [Tutorial 5 - Review summary of resilience posture at-scale across your Azure estate](./At%20Scale/ResiliencyOverview.md)
 - (Coming soon) Create and run a drill instance
-- [Troubleshooting and reporting issues](to be added)
-- [Frequently asked questions](FAQ.md)
+- [Troubleshooting and reporting issues](./Troubleshooting.md)
+- [Frequently asked questions](./FAQ.md)
 
 Please reach out to [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com) in case of any questions.
