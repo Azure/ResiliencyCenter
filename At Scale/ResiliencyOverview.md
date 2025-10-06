@@ -1,14 +1,7 @@
 # View resiliency posture across your resources and service groups
 
-You can use at-scale views to get comprehensive visibility into resiliency gaps across your Azure estate. There are two locations where you can access these at-scale views:
-
-1. **Resiliency Center** (currently shown as Business Continuity Center in the portal): Use the Resiliency section under Resiliency Center to see a summary of your zone resiliency posture and associated recommendations.
+You can use at-scale views to get comprehensive visibility into resiliency gaps across your Azure estate. Use the Resiliency section under Resiliency Center (currently displayed as 'Business Continuity center' in the portal) to see a summary of your zone resiliency posture and associated recommendations.
     ![Screenshot of ABCC Resiliency Overview screen](../img/09-ABCC-At-Scale-Overview-No-SG.png)
-2. **Operations Center**: Operations Center brings together various management experiences in Azure. The Resiliency section under Operations Center provides summaries and details on resiliency.
-    ![Screenshot of Ops360 Resiliency Overview screen](../img/08-Ops360-At-Scale-Overview-No-SG.png)
-
-> [!NOTE]
-> The Resiliency views are identical in both experiences. They serve as different entry points to the same functionality.
 
 Both views support resource-level and service group-level perspectives. If you haven't created service groups yet, you can use the resource-level views to get a summary. Service group creation is recommended for scenarios where you want to:
 
@@ -20,7 +13,7 @@ Both views support resource-level and service group-level perspectives. If you h
 
 To view which resources are resilient and non-resilient to zone outages, follow these steps:
 
-1. Navigate to the **Resiliency Overview**. You can find this under the Resiliency left navigation in either Business Continuity center or Operations Center.
+1. Navigate to the **Resiliency Overview**. You can find this under the Resiliency left navigation in Business Continuity center.
 
     ![Screenshot of ABCC Resiliency Overview screen](../img/09-ABCC-At-Scale-Overview-No-SG.png)
 
@@ -36,7 +29,7 @@ To view which resources are resilient and non-resilient to zone outages, follow 
     ![Screenshot of ABCC Resiliency Resource Recommendation Example](../img/11-ABCC-Resource-Recommendation.png)
 
 > [!TIP]
-> If you want a view more tailored to your scenario that ensures non-critical resources aren't flagged, and allows you to manually attest resources that are made zone resilient via a custom setup, we recommend creating service groups. You can create service groups directly from Resiliency center or Operations center. The steps are provided in the next section.
+> If you want a view more tailored to your scenario that ensures non-critical resources aren't flagged, and allows you to manually attest resources that are made zone resilient via a custom setup, we recommend creating service groups. You can create service groups directly from Resiliency center. The steps are provided in the next section.
 
 ## Create a service group
 
