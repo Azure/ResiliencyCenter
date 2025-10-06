@@ -2,23 +2,17 @@
 
 ## Product connections and scope
 
-### How are Resiliency Center, Advisor, and Operations Center connected?
+### How are Resiliency Center and Advisor connected?
 
 **Advisor** provides recommendations across all Well-Architected Framework (WAF) pillars beyond just Reliability. It's the entry point for customers who want a holistic view of how to improve reliability, security, cost efficiency, and more.
 
-**Resiliency Center (within Business Continuity center)** narrows the focus to zonal resiliency. It introduces functionality that Advisor doesn't currently have:
+**Resiliency Center (within Business Continuity center)** narrows the focus to zonal resiliency. It introduces additional functionality such as:
 
 - Defining Service Groups
 - Setting resiliency goals
 - Tracking progress toward those goals
 
-Its unique value is the goal-based view: customers can see exactly which recommendations they need to implement to achieve a resiliency target for their application.
-
-**Operations Center** is the unified operational platform. It spans multiple domains (observability, optimization, security, configuration, and resiliency):
-
-- Resiliency Center is one experience inside Operations Center
-- The Resiliency Center UI and data model are replicated across Resiliency Center and Operations Center, ensuring data consistency and a seamless experience across products
-- Advisor is comprehensive across pillars. Resiliency Center is goal-driven and application-focused on resiliency. Operations Center is the umbrella platform that integrates these experiences alongside other operational capabilities.
+Its unique value is the goal-based view: customers can see exactly which Advisor recommendations they need to implement to achieve a resiliency target for their application.
 
 ### What is the incremental value of using Resiliency Center?
 

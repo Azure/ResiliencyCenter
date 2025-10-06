@@ -33,8 +33,8 @@ To create a service group in the Azure portal:
 
    - **Parent Service Group**: Select the parent service group.
 
-   > [!NOTE]
-   > The root service group is automatically created using the Microsoft Entra ID as its identifier. If you're unsure which parent to select, choose the **Root Service Group**. This group's ID matches your tenant's ID, in the format `Microsoft.Management/serviceGroups[tenantId]`.
+> [!NOTE]
+> The root service group is automatically created using the Microsoft Entra ID as its identifier. If you're unsure which parent to select, choose the **Root Service Group**. This group's ID matches your tenant's ID, in the format `Microsoft.Management/serviceGroups[tenantId]`.
 
     ![Screenshot of the Basics page for creating a new service group](./img/01-Create-SG.png)
 
