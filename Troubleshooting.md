@@ -3,11 +3,44 @@
 This article contains information about common errors you might encounter while using Resiliency Center.
 
 > [!NOTE]
-> This content will be updated throughout the preview period. If you encounter errors not covered here, contact [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com) with your service group name and steps to reproduce the error.
+> This content will be updated throughout the preview period. If you encounter errors not covered here, contact [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com) with the information listed in [Report an issue](#report-an-issue).
 
-## Goal assignment errors
+## Report an issue
 
-### Resource count exceeds maximum limit during goal assignment
+If you encounter an issue while using Resiliency Center, send an email to [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com) with the following information. Providing both basic details and troubleshooting details helps the product team investigate the issue and improve the product.
+
+### Basic information
+
+Include the following details in your report:
+
+- **Browser URL**: Copy and paste the URL from your browser when the issue occurs
+- **Screenshot**: If there's a page crash or UX error, include a full browser window screenshot
+- **Date and time**: Approximate date and time when the issue occurred
+- **Issue description**: Detailed description of the issue and reproduction steps (if available)
+
+### Troubleshooting information
+
+If you can reproduce the issue, collect the following diagnostic information:
+
+1. **Network trace**:
+   - Open browser Developer Tools (F12)
+   - Enable Network trace
+   - Reproduce the scenario
+   - Export the network trace as a .har file
+   - Rename the file as `<CaseNumber>_networktrace.har`
+
+2. **Console logs**:
+   - In Developer Tools (F12), go to the **Console** tab
+   - Copy and paste all console content
+   - Save the content as `<CaseNumber>_consolelogs.txt`
+
+3. **Send both files**: Include both the .har file and console logs in your email.
+
+## Common Errors
+
+### Goal assignment errors
+
+#### Resource count exceeds maximum limit during goal assignment
 
 **Error message:**
 
@@ -27,9 +60,9 @@ Remove non-essential memberships from the service group.
 > [!IMPORTANT]
 > The resource count includes all resources under the service group, including any child service groups, subscriptions, or resource groups. Each resource is counted only once.
 
-## Rediscovery errors
+### Rediscovery errors
 
-### Resource count exceeds maximum limit during rediscovery
+#### Resource count exceeds maximum limit during rediscovery
 
 **Error message:**
 
