@@ -82,6 +82,8 @@ Follow these steps to register the resource provider and resolve the issue:
 
    After successful deletion, try to assign goals to the service group again. Please wait a few minutes after tenant registration before attempting to assign goals.
 
+![Screenshot of deleting goal template via API Playground](./img/25-Delete-Template.png)
+
 #### Resource count exceeds maximum limit during goal assignment
 
 **Error message:**
