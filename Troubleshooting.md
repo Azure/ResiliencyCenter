@@ -80,7 +80,7 @@ Follow these steps to register the resource provider and resolve the issue:
 
 3. **Retry goal assignment:**
 
-   After successful deletion, try to assign goals to the service group again.
+   After successful deletion, try to assign goals to the service group again. Please wait a few minutes after tenant registration before attempting to assign goals.
 
 #### Resource count exceeds maximum limit during goal assignment
 
