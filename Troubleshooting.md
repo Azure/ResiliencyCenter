@@ -40,6 +40,48 @@ If you can reproduce the issue, collect the following diagnostic information:
 
 ### Goal assignment errors
 
+#### Goal assignment fails with "Goal template does not exist" error
+
+**Error message:**
+
+```text
+Goal template does not exist
+```
+
+**Cause:** This issue occurs when the `Microsoft.AzureResilienceManagement` resource provider isn't registered on your tenant. For more information about prerequisites, see [Prerequisites](./Prerequisites.md).
+
+**Resolution:**
+
+Follow these steps to register the resource provider and resolve the issue:
+
+1. **Register the resource provider:**
+
+   Run the following PowerShell commands to register the resource provider on your tenant:
+
+   ```powershell
+   Connect-AzAccount
+   # Login when prompted. If prompted for a subscription ID, use any subscription within your tenant
+   
+   Invoke-AzRestMethod -Path /providers/Microsoft.AzureResilienceManagement/register?api-version=2021-04-01 -Method POST
+   # Check for successful registration (status code 200)
+   ```
+
+2. **Delete the existing goal template:**
+
+   After successful registration, delete the existing goal template using the Azure Resource Manager API Playground:
+
+   a. Open the [Azure Resource Manager API Playground](https://portal.azure.com/#view/Microsoft_Azure_Resources/ArmPlayground) in the Azure portal.
+
+   b. Run the following DELETE command (replace `<SG Name>` with your service group name):
+
+   ```http
+   DELETE /providers/Microsoft.Management/serviceGroups/<SG Name>/providers/Microsoft.AzureResilienceManagement/goalTemplates/defaultTemplate?api-version=2025-02-01-preview
+   ```
+
+3. **Retry goal assignment:**
+
+   After successful deletion, try to assign goals to the service group again.
+
 #### Resource count exceeds maximum limit during goal assignment
 
 **Error message:**
