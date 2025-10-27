@@ -66,6 +66,10 @@ Follow these steps to register the resource provider and resolve the issue:
    # Check for successful registration (status code 200)
    ```
 
+
+> [!IMPORTANT]
+> Wait 15-20 minutes after registering the resource provider before proceeding with the following steps.
+
 2. **Delete the existing goal template:**
 
    After successful registration, delete the existing goal template using the Azure Resource Manager API Playground:
