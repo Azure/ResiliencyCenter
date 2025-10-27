@@ -66,7 +66,6 @@ Follow these steps to register the resource provider and resolve the issue:
    # Check for successful registration (status code 200)
    ```
 
-
 > [!IMPORTANT]
 > Wait 15-20 minutes after registering the resource provider before proceeding with the following steps.
 
@@ -84,7 +83,7 @@ Follow these steps to register the resource provider and resolve the issue:
 
 3. **Retry goal assignment:**
 
-   After successful deletion, try to assign goals to the service group again. Please wait a few minutes after tenant registration before attempting to assign goals.
+   After successful deletion, try to assign goals to the service group again. Please wait 15-20 mins after tenant registration in step 1 before attempting to assign goals.
 
 ![Screenshot of deleting goal template via API Playground](./img/25-Delete-Template.png)
 
