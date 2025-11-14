@@ -1,6 +1,6 @@
 # How to view the Resiliency Posture of your Service Group
 
-This article explains how to interpret the **resiliency summary view** of your service group in Resiliency Center. It covers key concepts, supported scenarios, and how to **exclude or manually attest resources** to improve the accuracy of your resilience posture and receive more targeted recommendations.
+This article explains how to interpret the **resiliency summary view** of your service group in Resiliency experiences. It covers key concepts, supported scenarios, and how to **exclude or manually attest resources** to improve the accuracy of your resilience posture and receive more targeted recommendations.
 
 ---
 
@@ -9,13 +9,13 @@ This article explains how to interpret the **resiliency summary view** of your s
 Once goals are assigned to your service group, the resilience summary displays three key metrics:
 
 1. **Zone-resilient resources**  
-   Resources configured with an Azure-recommended solution for zone resiliency. You may also manually attest resources using custom solutions not currently detectable by Resiliency Center.
+   Resources configured with an Azure-recommended solution for zone resiliency. You may also manually attest resources using custom solutions not currently detectable by Resiliency service.
 
 2. **Non Zone-resilient resources**  
    Resources for which no zone resiliency solution has been detected.
 
 3. **Resources not evaluated**  
-   Resources excluded from evaluation by the user, or unsupported by Resiliency Center.
+   Resources excluded from evaluation by the user, or unsupported by Resiliency service.
 
 The resource count reflects all the resources under the service group, which the user assigning the goal (or triggering rediscovery) has access to. This includes **resources under any child service groups**, **subscriptions** or **resource groups** that belong to this service group, with each resource counted only once.
 
@@ -45,7 +45,7 @@ To view the resiliency posture for your service group:
 
 ## Override Resiliency Assessment in Specific Scenarios
 
-In some cases, you may need to override the default resiliency assessment provided by Resiliency Center. This can help ensure that recommendations align with your architectural decisions and operational context.
+In some cases, you may need to override the default resiliency assessment provided by Resiliency service. This can help ensure that recommendations align with your architectural decisions and operational context.
 
 ### Scenario 1: Exclude Non-Critical Resources
 
@@ -63,7 +63,7 @@ To exclude a non-critical resource, follow the below steps:
 4. Once saved, the exemption status for the resource shows up as 'Excluded' and is counted under the 'Not Evaluated' category.
 
 > [!NOTE]
-> Resource types that are not supported by Resiliency Center are automatically excluded from goal evaluation and cannot be included. However, if you are already ensuring resiliency for these resources, you can manually attest them to reflect their resiliency status in the summary view.
+> Resource types that are not supported by Resiliency service are automatically excluded from goal evaluation and cannot be included. However, if you are already ensuring resiliency for these resources, you can manually attest them to reflect their resiliency status in the summary view.
 
 ### Scenario 2: Manually Attest Resources
 
@@ -92,8 +92,8 @@ Over time, there might be changes to your service group, such as resources being
 >
 > Example:
 >
-> - If User 1 has service group membership read access to resources A, B, and C and runs rediscovery, Resiliency Center will consider A, B, and C as part of the service group for evaluation.
-> - If User 2 later runs rediscovery and has access only to resources B and C, Resiliency Center will evaluate only B and C as part of the service group for evaluation.
+> - If User 1 has service group membership read access to resources A, B, and C and runs rediscovery, Resiliency service will consider A, B, and C as part of the service group for evaluation.
+> - If User 2 later runs rediscovery and has access only to resources B and C, Resiliency service will evaluate only B and C as part of the service group for evaluation.
 >
 > Recommendation:
 >
@@ -101,7 +101,7 @@ Over time, there might be changes to your service group, such as resources being
 
 ## Supported Solutions
 
-The following table lists the Azure-supported solutions recognised by Resiliency Center for each resource type:
+The following table lists the Azure-supported solutions recognised by Resiliency service for each resource type:
 
 | **Resource Type**       | **Detected Solution**                                  |
 |-------------------------|--------------------------------------------------------|

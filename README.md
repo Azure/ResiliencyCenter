@@ -1,6 +1,6 @@
-# Azure Resiliency Center (preview)
+# Resiliency in Azure (preview)
 
-Azure Resiliency Center (preview) is a self-serve product experience designed to help enterprises define, validate, and achieve their applications' resilience goals in Azure.
+Resiliency in Azure (preview) is a self-serve product experience designed to help enterprises define, validate, and achieve their applications' resiliency goals in Azure.
 
 With this tool, you can:
 

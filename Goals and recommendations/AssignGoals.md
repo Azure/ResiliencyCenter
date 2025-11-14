@@ -1,9 +1,9 @@
 # How to Assign Goals to Your Service Group
 
-To understand your service group's resiliency posture and receive tailored recommendations, you must first assign goals. This guide walks you through the prerequisites, supported scenarios, and step-by-step instructions for assigning goals in Resiliency Center.
+To understand your service group's resiliency posture and receive tailored recommendations, you must first assign goals. This guide walks you through the prerequisites, supported scenarios, and step-by-step instructions for assigning goals in Resiliency in Azure.
 
 > [!NOTE]
-> The current release of Resilience Manager supports only **zonal resilience** goals. Future updates will include support for **regional resilience** (disaster recovery), **cyber resiliency**, and more.
+> The current release of Resiliency experiences supports only **zonal resilience** goals. Future updates will include support for **regional resilience** (disaster recovery), **cyber resiliency**, and more.
 
 ---
 
