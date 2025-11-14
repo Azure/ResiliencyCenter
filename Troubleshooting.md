@@ -1,6 +1,6 @@
-# Troubleshoot Errors in Resiliency Center
+# Troubleshoot Errors in Resiliency Experiences
 
-This article contains information about common errors you might encounter while using Resiliency Center.
+This article contains information about common errors you might encounter while using Resiliency in Azure.
 
 > [!NOTE]
 > This content will be updated throughout the preview period. If you encounter errors not covered here, contact [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com) with the information listed in [Report an issue](#report-an-issue).
@@ -95,7 +95,7 @@ Follow these steps to register the resource provider and resolve the issue:
 Resource count in the service group exceeds the maximum supported limit of 500
 ```
 
-**Cause:** This error occurs when you try to assign goals to a service group that contains 500 or more resources, which exceeds the supported scope of Resiliency Center.
+**Cause:** This error occurs when you try to assign goals to a service group that contains 500 or more resources, which exceeds the supported scope of Resiliency experiences.
 
 **Resolution:**
 
@@ -117,7 +117,7 @@ Remove non-essential memberships from the service group.
 Resource count in the service group exceeds the maximum supported limit of 500. All existing goal assignment resource associations have been cleaned up.
 ```
 
-**Cause:** This error occurs when resources are added to the service group (or any child service groups, subscriptions, or resource groups) after goal assignment, causing the number of discovered members to exceed 500. This exceeds the supported scope for Resiliency Center.
+**Cause:** This error occurs when resources are added to the service group (or any child service groups, subscriptions, or resource groups) after goal assignment, causing the number of discovered members to exceed 500. This exceeds the supported scope for Resiliency experiences.
 
 **Resolution:**
 

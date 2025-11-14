@@ -2,14 +2,14 @@
 
 ## Overview
 
-Resiliency Center provides zone redundancy (ZR) recommendations to help improve the availability and resiliency of Azure services. This guide explains how to interpret and act on these recommendations across compute, container, data, and networking resources.
+Resiliency in Azure provides zone redundancy (ZR) recommendations to help improve the availability and resiliency of Azure services. This guide explains how to interpret and act on these recommendations across compute, container, data, and networking resources.
 
 ---
 
 ## Viewing recommendations
 
 1. **Before goals are set (Day 0):** You will see a single, service-group level recommendation that prompts you to [assign goals](AssignGoals.md). Follow the link to assign goals for the service group.
-2. **After goals are assigned:** Resiliency Center evaluates supported resources in the service group and surfaces resource-level recommendations for items that do not meet the assigned goals (for example, missing zone resiliency).
+2. **After goals are assigned:** Resiliency service evaluates supported resources in the service group and surfaces resource-level recommendations for items that do not meet the assigned goals (for example, missing zone resiliency).
     ![Screenshot of recommendations list under SG](../img/20-SG-Recommendations-List.png)
 3. **Inspect and act on recommendations:** Select any recommendation to open the recommendation details page. Details include the impacted resource(s), why the recommendation was raised, and step-by-step remediation guidance you can follow to resolve the issue or mark the resource as exempt or manually attested.
     ![Screenshot of recommendation details view](../img/21-Recommendation-Details-View.png)

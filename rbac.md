@@ -1,4 +1,4 @@
-# Role Based Access Control (RBAC) Requirements for Resiliency Center scenarios
+# Role Based Access Control (RBAC) Requirements for Resiliency preview scenarios
 
 The following table lists the RBAC roles that can be leveraged by users to achieve specific resiliency management requirements.
 

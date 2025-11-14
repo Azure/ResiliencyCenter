@@ -1,6 +1,6 @@
 # View resiliency posture across your resources and service groups
 
-You can use at-scale views to get comprehensive visibility into resiliency gaps across your Azure estate. Use the Resiliency section under Resiliency Center (currently displayed as 'Business Continuity center' in the portal) to see a summary of your zone resiliency posture and associated recommendations.
+You can use at-scale views to get comprehensive visibility into resiliency gaps across your Azure estate. Use the Resiliency section to see a summary of your zone resiliency posture and associated recommendations.
     ![Screenshot of ABCC Resiliency Overview screen](../img/09-ABCC-At-Scale-Overview-No-SG.png)
 
 Both views support resource-level and service group-level perspectives. If you haven't created service groups yet, you can use the resource-level views to get a summary. Service group creation is recommended for scenarios where you want to:
@@ -13,7 +13,7 @@ Both views support resource-level and service group-level perspectives. If you h
 
 To view which resources are resilient and non-resilient to zone outages, follow these steps:
 
-1. Navigate to the **Resiliency Overview**. You can find this under the Resiliency left navigation in Business Continuity center.
+1. Navigate to the **Resiliency Overview**. You can find this under the Resiliency left navigation in Resiliency.
 
     ![Screenshot of ABCC Resiliency Overview screen](../img/09-ABCC-At-Scale-Overview-No-SG.png)
 
@@ -29,13 +29,13 @@ To view which resources are resilient and non-resilient to zone outages, follow 
     ![Screenshot of ABCC Resiliency Resource Recommendation Example](../img/11-ABCC-Resource-Recommendation.png)
 
 > [!TIP]
-> If you want a view more tailored to your scenario that ensures non-critical resources aren't flagged, and allows you to manually attest resources that are made zone resilient via a custom setup, we recommend creating service groups. You can create service groups directly from Resiliency center. The steps are provided in the next section.
+> If you want a view more tailored to your scenario that ensures non-critical resources aren't flagged, and allows you to manually attest resources that are made zone resilient via a custom setup, we recommend creating service groups. You can create service groups directly from Resiliency experiences. The steps are provided in the next section.
 
 ## Create a service group
 
 To create a service group from within the resource resiliency experiences, follow these steps:
 
-1. Navigate to the **Resource resiliency** view under Resiliency center.
+1. Navigate to the **Resource resiliency** view under Resiliency.
 
     ![Screenshot of ABCC Resiliency Resource List View](../img/10-ABCC-Resource-Resiliency-List.png)
 
@@ -57,13 +57,13 @@ To create a service group from within the resource resiliency experiences, follo
 
 Once you've created the required service groups and assigned goals, you can view the resiliency summary across service groups. Follow these steps:
 
-1. Navigate to the **Service group resiliency overview** under Resiliency Center.
+1. Navigate to the **Service group resiliency overview** under Resiliency.
 2. You'll see the following counts:
 
    - **Zone resilient service groups**: Service groups where all resources (that aren't excluded) are configured with zone resiliency or manually attested by the user.
    - **Non-zone resilient service groups**: Service groups where one or more resources aren't configured for zone resiliency.
    - **Goals not assigned**: Service groups where goals are not assigned yet.
-   - **Not evaluated service groups**: Service groups where one or more resources aren't supported by Resiliency center and couldn't be evaluated. If there's a mixture of non-resilient and non-supported resources in the service group, the service group gets marked as non-resilient directly.
+   - **Not evaluated service groups**: Service groups where one or more resources aren't supported by Resiliency service and couldn't be evaluated. If there's a mixture of non-resilient and non-supported resources in the service group, the service group gets marked as non-resilient directly.
    ![Screenshot of ABCC SG summary tile](../img/23-ABCC-SG-Summary.png)
 3. Select the tile to go to a list view of service groups where you can view the number of resources per service group that are zone resilient. Navigate to the service group to view more detailed information about that service group, and to [include or exclude resources](../Goals%20and%20recommendations/ViewResiliencePosture.md#scenario-1-exclude-non-critical-resources), [manually attest resources](../Goals%20and%20recommendations/ViewResiliencePosture.md#scenario-2-manually-attest-resources), and [review recommendations](../Goals%20and%20recommendations/Recommendations.md) generated for that service group.
 
