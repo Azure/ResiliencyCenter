@@ -1,4 +1,4 @@
-# Pre-requisites to use Resiliency Center (preview)
+# Pre-requisites to use Resiliency in Azure (preview)
 
 1. Ensure you have **signed up** for the preview using [this form](https://forms.office.com/r/hzN515nbM9). You will receive an email notification from the product group once you are enrolled, along with instructions on how to access the preview.
 
