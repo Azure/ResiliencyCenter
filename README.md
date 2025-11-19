@@ -7,7 +7,7 @@ With this tool, you can:
 - Set resiliency goals for your applications
 - Receive detailed recommendations to meet your goals
 - Review summary of resilience posture across your Azure estate from a single pane of glass
-- (Coming soon) Run simulated outage drills to validate outage readiness for your applications
+- Run simulated outage drills to validate outage readiness for your applications
 
 ## Sign up for preview
 
@@ -23,7 +23,8 @@ Use the below quick links to start testing out various scenarios that are part o
 - [Tutorial 3 - Review current protection posture of your service group](./Goals%20and%20recommendations/ViewResiliencePosture.md)
 - [Tutorial 4 - Review recommendations for your service groups](./Goals%20and%20recommendations/Recommendations.md)
 - [Tutorial 5 - Review summary of resilience posture at-scale across your Azure estate](./At%20Scale/ResiliencyOverview.md)
-- (Coming soon) Create and run a resiliency drill
+- [Tutorial 6 - Create a recovery plan for zonal recovery](./Recovery%20plan/CreateAndExecuteRecoveryPlan.md)
+- [Tutorial 7 - Create and run a resiliency drill for your service group](./Drills/DefineAndExecuteDrill.md)
 - [Troubleshooting and reporting issues](./Troubleshooting.md)
 - [Frequently asked questions](./FAQ.md)
 
