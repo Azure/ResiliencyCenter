@@ -118,6 +118,12 @@ The following table lists the Azure-supported solutions recognised by Resiliency
 | Azure Application Gateway         | Azure App Gateway Zone-redundancy |
 | Azure Firewall         | Azure Firewall Zone-redundancy |
 | Azure IP Address         | Azure IP Address Standard SKU Zone-redundancy |
+| Azure Database for MySQL - Flexible Server         | Azure MySQL Zone-redundancy |
+| Azure Cache for Redis         | Azure Cache for Redis Zone-redundancy |
+| ExpressRoute Gateway         | ExpressRoute Zone Redundant SKU |
+| Azure VMSS                | Azure VMSS Zone Redundant Deployment |
+| Azure App Service Plan                | Azure App Service Plan Zone Redundancy |
+| Azure App Service Environment                | Azure App Service Environment Zone Redundancy 
 
 ## Next steps
 
