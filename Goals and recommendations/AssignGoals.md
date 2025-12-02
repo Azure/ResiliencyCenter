@@ -33,7 +33,7 @@ Follow these steps to assign goals to your service group:
 4. A confirmation blade will appear. Click **Save** to confirm.
     ![Screenshot of Service Group Goals page](../img/07-SG-Goals-Context-Blade.png)
 5. The system will begin assigning resources as well as discovering resources in the service group. This may take a few minutes to complete.
-6. Once discovery is complete, a **summary of your protection posture** and **recommendations** will be displayed.
+6. After discovery completes, you'll see a **summary of your protection status** and any **recommendations**.
 
 > [!TIP]
 > The next article will help you interpret the protection summary, manage exclusions, and take action on recommendations.
