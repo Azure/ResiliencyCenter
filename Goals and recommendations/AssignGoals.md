@@ -1,6 +1,6 @@
 # How to Assign Goals to Your Service Group
 
-To understand your service group's resiliency posture and receive tailored recommendations, you must first assign goals. This guide walks you through the prerequisites, supported scenarios, and step-by-step instructions for assigning goals in Resiliency in Azure.
+To understand your service group's resiliency status and receive tailored recommendations, you must first assign goals. This guide walks you through the prerequisites for assigning goals, supported scenarios, and step-by-step instructions for assigning goals in Resiliency in Azure.
 
 > [!NOTE]
 > The current release of Resiliency experiences supports only **zonal resilience** goals. Future updates will include support for **regional resilience** (disaster recovery), **cyber resiliency**, and more.
@@ -9,18 +9,16 @@ To understand your service group's resiliency posture and receive tailored recom
 
 ## Prerequisites
 
-Before assigning goals, ensure the following:
-
-- You have **Service Group Contributor** or higher-level access to the service group.
+- Before assigning goals, make sure you have **Service Group Contributor** or higher-level access to the service group.
 - Ensure that all the other pre-requisites in [this article](../Prerequisites.md) are also met before proceeding.
 
 ---
 
-## Supported Scenarios
+## Usage Constraints
 
 There are a few limitations to be aware of:
 
-- Goals **cannot** be assigned to service groups with **500 or more resources**.
+- Goals **cannot** be assigned to service groups that contain **500 or more resources**.
 
 ---
 
@@ -30,7 +28,7 @@ Follow these steps to assign goals to your service group:
 
 1. Navigate to your **Service Group**.
 2. Select the **Goals and recommendations** tab.
-3. Click the **Assign goals** tile.
+3. Click the **Assign goals** CTA button.
     ![Screenshot of Service Group Goals page](../img/06-SG-No-Goals.png)
 4. A confirmation blade will appear. Click **Save** to confirm.
     ![Screenshot of Service Group Goals page](../img/07-SG-Goals-Context-Blade.png)
