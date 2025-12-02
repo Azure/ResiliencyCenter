@@ -12,6 +12,7 @@ To understand your service group's resiliency posture and receive tailored recom
 Before assigning goals, ensure the following:
 
 - You have **Service Group Contributor** or higher-level access to the service group.
+- Ensure that all the other pre-requisites in [this article](../Prerequisites.md) are also met before proceeding.
 
 ---
 
