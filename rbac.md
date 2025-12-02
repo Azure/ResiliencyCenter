@@ -25,7 +25,8 @@ The following table lists the RBAC roles that can be leveraged by users to achie
 
 | Scenario | Roles |
 |----------|--------------------------|
-| Create and Execute Recovery Plan | 1. Recovery Plan Contributor on the Service Group. <br> 2. In addition, there is vault level RBAC that is needed by Recovery Plan MSI to perform Azure Site Recovery related operations. <br> 3.  User will also need contributor access to resources in case they need to enable zone redundancy for those resources before proceeding with plan creation and execution. |
+| Create and Execute Recovery Plan | 1. **Recovery Contributor**: Required on the Service Group. <br> 2. **Reader Access**: Required on the subscription or resource group that is a member of the Service Group. This ensures that underlying resources can be discovered. <br><br> **For Recovery Plans containing VMs using Azure Site Recovery, the following additional permissions are required:** <br><br> 1. **Service Group Contributor**: Required on the Service Group. <br> 2. **Microsoft.Relationship/ServiceGroupMember/write**: Required on the linked recovery resource (e.g., VM created during failover) to add the new VM to the Service Group. <br> 3. **Site Recovery Operator**: Required on the Recovery Services vault used by the VM. This permission must be assigned to the managed identity of the Recovery Plan. <br><br> **For users utilizing custom runbooks in the Recovery Plan, the following additional permissions are required:** <br><br> 1. **Automation Job Operator**: Required on the associated Automation Account. <br><br> **For enabling zone redundacy on resources, the following additional permissions are required:** <br><br> 1. **Contributor Access**: Required on resources to enable zone redundancy before creating and executing the Recovery Plan.
+|
 
 ## Drills
 
