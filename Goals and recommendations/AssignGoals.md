@@ -9,7 +9,7 @@ To understand your service group's resiliency status and receive tailored recomm
 
 ## Prerequisites
 
-- Before assigning goals, make sure you have **Service Group Contributor** or higher-level access to the service group.
+- Before assigning goals, make sure you have **Service Group Contributor** (or higher) access to the service group.
 - Ensure that all the other pre-requisites in [this article](../Prerequisites.md) are also met before proceeding.
 
 ---
