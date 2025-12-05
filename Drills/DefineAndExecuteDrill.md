@@ -12,6 +12,14 @@ A Zone Down Drill template populates the Azure-recommended faults for the suppor
 
 2. In addition, you will need to have a recovery plan setup for your service group. Refer to the [recovery plan tutorial](../Recovery%20plan/CreateAndExecuteRecoveryPlan.md) for instructions to create a recovery plan.
 
+3. Ensure that the **Chaos Studio Resource Provider** is registered in the subscription where the Chaos Experiment will be created. If it is not already registered, follow these steps:
+   - Navigate to the **Subscription** view in the Azure portal.
+   - Search for **Microsoft.Chaos** in the Resource Providers section.
+   - Select and register the provider.
+   - Allow 15–20 minutes for the registration to complete before proceeding with drill creation.
+
+![Chaos Registration Step](../img/42-Chaos-Reg.png)
+
 ## Drill Setup
 
 To define a Zone Down simulation drill, follow the steps below:
