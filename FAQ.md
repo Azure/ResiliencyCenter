@@ -18,7 +18,7 @@ Its unique value is the goal-based view: customers can see exactly which Advisor
 
 **Self-service enablement**: Customers can independently define Service Groups and set resiliency goals. This reduces reliance on Microsoft account teams to scope workloads, accelerating time-to-value.
 
-**Goal-based resiliency tracking**: Unlike Advisor's broad recommendation set, Resiliency in Azure provides a goal-oriented view. Customers can see exactly where they stand against zonal resiliency adoption and identify gaps.
+**Goal-based resiliency tracking**: Unlike the Advisor's broad recommendation set, Resiliency in Azure provides a goal-oriented view. Customers can see exactly where they stand against zonal resiliency adoption and identify gaps.
 
 **Complementary to WARA**: Resiliency in Azure doesn't replace WARA — it currently covers only zonal resiliency recommendations. Instead, it complements WARA by providing a lightweight, self-serve experience that helps customers operationalize resiliency improvements between WARA engagements.
 
@@ -55,4 +55,4 @@ Currently, there's no way to convert Microsoft (field-defined) workloads into Se
 
 ### How much time will it take to create Service Groups and set goals before I start seeing recommendations?
 
-It can take around 2 hours for the recommendations for the assigned goal to be visible after Service Group is created.
+It can take around 2 hours for the recommendations for the assigned goal to be visible after the Service Group is created.
