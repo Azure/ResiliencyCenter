@@ -10,7 +10,7 @@ A Zone Down Drill template populates the Azure-recommended faults for the suppor
 
 1. Ensure that all the pre-requisites in [this article](../Prerequisites.md) are met.
 
-2. In addition, you will need to have a recovery plan setup for your service group. Refer to the [recovery plan tutorial](../Recovery%20plan/CreateAndExecuteRecoveryPlan.md) for instructions to create a recovery plan.
+2. In addition, you will need to have a recovery plan set up for your service group. Refer to the [recovery plan tutorial](../Recovery%20plan/CreateAndExecuteRecoveryPlan.md) for instructions to create a recovery plan.
 
 3. In addition, ensure that the **Chaos Studio Resource Provider** is registered in the subscription where the Chaos Experiment will be created. If it is not already registered, follow these steps:
    - Navigate to the **Subscription** view in the Azure portal.
@@ -32,16 +32,16 @@ To define a Zone Down simulation drill, follow the steps below:
 
     ![Screenshot of SG Create Drill Flow](../img/27-Create-Drill-1.png)
 
-3. Then choose between System-assigned and User-assigned identity that will be used to fetch resources of the Service Group and the associated Azure Health Model details securely. The same identity can be used for fault injection by default or alternately, a different identity can be selected. The role assignment type will use Azure built-in roles by default.
+3. Then choose between System-assigned and User-assigned identity that will be used to fetch resources of the Service Group and the associated Azure Health Model details securely. The same identity can be used for fault injection by default, or alternatively, a different identity can be selected. The role assignment type will use Azure built-in roles by default.
 
     ![Screenshot of Drill MSI selection](../img/28-Create-Drill-MSI-Step.png)
 
 4. Ensure that users responsible for drill creation and execution have the required permissions. These permissions are listed below for quick reference:
-    - Minimum role required at Service Group level for successful drill execution: 
+    - Minimum role required at the Service Group level for successful drill execution: 
         - **SG Drill Contributor**, to Create/Update/Execute Drills (tenant-level resources).  
         - **Recovery Plan Contributor**, to Create/Execute Recovery Plan
     - Minimum role required at Subscription level (the subscription associated with Automation Account and Chaos experiment) for successful drill execution: **Drill Assets Contributor**, to manage the Subscription associated with Automation Account and Chaos experiment.
-    - Minimum roles required in individual resources to perform fault injection: **Drill Resource Fault Contributor**, tomanage the target resources.
+    - Minimum roles required in individual resources to perform fault injection: **Drill Resource Fault Contributor**, to manage the target resources.
 
 5. Upon confirmation, the Drill instance gets created. Note that every Service Group can be associated with a single Drill instance. 
 
@@ -52,8 +52,8 @@ To define a Zone Down simulation drill, follow the steps below:
 7. Next, proceed to review the resources that are included in the Drill. Key points on the resources included in a drill: 
     1. Resources of the Service Group that have a native zonal resiliency solution are included in the drill by default. These are resources that will qualify for fault injection. 
     2. If the Service Group has resources such as Virtual Machines configured with Azure Site Recovery that require manual failover, a Recovery Plan needs to be associated with the Service Group to failover the resources in the desired order of recovery post fault injection.
-    3. The reason why a resource is excluded from the drill can be varied. Some of the common reasons include the lack of a native zonal resiliency solution, resource excluded from recovery plan, the service does not support the detection of zonal resiliency solution for this resource type etc.
-    4. Any resource that is excluded by default from the drill can be included back by clicking on “View details and include resources” as shown below. Ensure that you click on “Refresh” upon including resources back to the drill to see the updated list:
+    3. The reason why a resource is excluded from the drill can be varied. Some of the common reasons include the lack of a native zonal resiliency solution, the resource being excluded from the recovery plan, the service not supporting the detection of zonal resiliency solutions for this resource type, etc.
+    4. Any resource that is excluded by default from the drill can be included back by clicking on “View details and include resources” as shown below. Ensure that you click on “Refresh” upon including resources back in the drill to see the updated list:
 
     ![Screenshot of Drill Resource Review](../img/30-Drill-Resources.png)
 
@@ -81,7 +81,7 @@ To define a Zone Down simulation drill, follow the steps below:
         >
         > - `TargetZone` (string): Target zone (e.g., az1, az2, az3).
 
-    The current implementation of custom scripts infra do not support individual resource level response schema (i.e. if the script fails, we cannot detect which resources within it failed). Only if custom Scripts adhere to this response schema, will the service be able to get resource level failure details. Otherwise, all resources acted on by this script will be marked as failed if the script fails:
+    The current implementation of the custom scripts infrastructure does not support individual resource-level response schema (i.e., if the script fails, we cannot detect which resources within it failed). Only if custom Scripts adhere to this response schema will the service be able to get resource-level failure details. Otherwise, all resources acted on by this script will be marked as failed if the script fails:
 
     ````json
     {
@@ -116,17 +116,17 @@ To define a Zone Down simulation drill, follow the steps below:
 
 ![Screenshot of custom fault selection](../img/32-Drill-Custom-Fault-Injection.png)
 
-Note that all resources are in "Needs Attention" state by default. Once the fault logic has been defined, select each of these resources and click on "Include and prepare for fault injection". This step proceeds to complete role assignment and target onboarding, which are mandatory steps to perform fault injection. Leverage the hyperlink on "Needs attention" to debug the reason for lack of resource readiness for fault injection.
+Note that all resources are in "Needs Attention" state by default. Once the fault logic has been defined, select each of these resources and click on "Include and prepare for fault injection". This step proceeds to complete role assignment and target onboarding, which are mandatory steps to perform fault injection. Leverage the hyperlink on "Needs attention" to debug the reason for the lack of resource readiness for fault injection.
 
 ![Screenshot of resource exclusion](../img/33-Drill-Include-Exclue.png.jpg)
 
-Alternately, resources can be excluded from fault injection by selecting the resource and clicking on "Exclude from fault injection".
+Alternatively, resources can be excluded from fault injection by selecting the resource and clicking on "Exclude from fault injection".
 
-Any resource that undergoes changes in the Fault Designer will be in "Under edit" state till the changes are not saved.
+Any resource that undergoes changes in the Fault Designer will be in "Under edit" state till the changes are saved.
 
 Leverage the "Fault duration" input to inject faults for a set duration. The default value is 10 minutes.
 
-9. Once fault design is complete for all resources, review readiness across all summary widgets. "Fix up" on Overview screen can be leveraged to fix any config drifts and to attempt changing "Drill execution readiness" from Not Ready to Ready.
+9. Once fault design is complete for all resources, review readiness across all summary widgets. "Fix up" on the Overview screen can be leveraged to fix any config drifts and to attempt changing "Drill execution readiness" from Not Ready to Ready.
 
     > [!NOTE]
     > Refresh the drill instance after every edit operation.
@@ -143,20 +143,20 @@ Leverage the "Fault duration" input to inject faults for a set duration. The def
 
 4. Finally, review the final set of resources that will undergo fault injection and confirm execution. 
 
-5. Drill execution progress can be tracked through a job as shown below.
+5. Drill execution progress can be tracked through a job, as shown below.
 
 ![Screenshot of Drill Run Job](../img/35-Drill-Run-Job.png)
   
-Every drill execution job follows the sequence of Fault Injection > Failover > Reprotect > Failover (in reverse direction) > Reprotect (in reverse direction). For a given step, “Retry” operation can be leveraged to re-execute any given operation for a failed resource. “Start” begins the step and “Mark step as complete” ends the step. Once a step, for example, Reprotect is ended, it cannot be retried. 
+Every drill execution job follows the sequence of Fault Injection > Failover > Reprotect > Failover (in reverse direction) > Reprotect (in reverse direction). For a given step, the “Retry” operation can be leveraged to re-execute any given operation for a failed resource. “Start” begins the step, and “Mark step as complete” ends the step. Once a step, for example, Reprotect is ended, it cannot be retried. 
 
 > [!NOTE]
-> For Failover (Reverse) to select the right resources for failover back from target to source zone, edit the source recovery plan’s resources before failover.
+> For Failover (Reverse) to select the right resources for failover back from the target to the source zone, edit the source recovery plan’s resources before failover.
 
-Every drill execution also supports addition of notes during the execution which will get stored as a part of run history of the drill. 
+Every drill execution also supports the addition of notes during the execution, which will be stored as part of the run history of the drill. 
 
 > [!NOTE]
 > Upon adding notes and saving the notes, refresh the job to update the notes. 
 
-Additionally, every execution run should be explicitly ended using “End execution”, which is followed by review of the notes and an attestation of the final status of the Drill as shown below.
+Additionally, every execution run should be explicitly ended using “End execution”, which is followed by a review of the notes and an attestation of the final status of the Drill as shown below.
 
 ![Screenshot of Drill Execution End](../img/36-Drill-End-Execution.png)
