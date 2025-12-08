@@ -6,16 +6,16 @@ With this tool, you can:
 
 - Set resiliency goals for your applications
 - Receive detailed recommendations to meet your goals
-- Review summary of resilience posture across your Azure estate from a single pane of glass
+- Review a summary of resilience posture across your Azure estate from a single pane of glass
 - Run simulated outage drills to validate outage readiness for your applications
 
 ## Sign up for preview
 
-Sign up for the preview via [this form](https://forms.office.com/r/hzN515nbM9). You will receive an email notification once you are enrolled for the preview.
+Sign up for the preview via [this form](https://forms.office.com/r/hzN515nbM9). You will receive an email notification once you are enrolled in the preview.
 
 ## Get started
 
-Use the below quick links to start testing out various scenarios that are part of the preview. It is recommended to start with the 'Review pre-requisites' page. Each page has a 'Next step' section that will help you sequentially navigate through the remaining sections of the documentation and try out each scenario.
+Use the quick links below to start testing out various scenarios that are part of the preview. It is recommended to start with the 'Review pre-requisites' page. Each page has a 'Next step' section that will help you sequentially navigate through the remaining sections of the documentation and try out each scenario.
 
 - [Review pre-requisities](Prerequisites.md)
 - [Tutorial 1 - Create a service group to represent your application](CreateServiceGroup.md)

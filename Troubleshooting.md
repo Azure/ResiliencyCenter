@@ -7,7 +7,7 @@ This article contains information about common errors you might encounter while 
 
 ## Report an issue
 
-If you encounter an issue while using Resiliency Center, send an email to [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com) with the following information. Providing both basic details and troubleshooting details helps the product team investigate the issue and improve the product.
+If you encounter an issue while using Resiliency Center, email [azresiliencyprivatepreviewsupport@microsoft.com](mailto:azresiliencyprivatepreviewsupport@microsoft.com) with the following information. Providing both basic details and troubleshooting details helps the product team investigate the issue and improve the product.
 
 ### Basic information
 

@@ -1,6 +1,6 @@
 # Role Based Access Control (RBAC) Requirements for Resiliency preview scenarios
 
-The following table lists the RBAC roles that can be leveraged by users to achieve specific resiliency management requirements.
+The following table lists the RBAC roles users can use to meet specific resiliency management requirements.
 
 ## Service Group Management
 
@@ -13,7 +13,7 @@ The following table lists the RBAC roles that can be leveraged by users to achie
 | Scenario | Roles |
 |----------|--------------------------|
 | Assign goals to service group | 1.  Service Group contributor <br>2.  Microsoft.Relationship/ServiceGroupMember/read access to the resources under the service group |
-| View counts of resilient, non-resilient, not evaluated resources under the service group (after goal assignment) | 1.  Service Group reader |
+| View counts of resilient, non-resilient, and not evaluated resources under the service group (after goal assignment) | 1.  Service Group reader |
 | View list of resources under the service group and their zone resiliency configuration status (after goal assignment) | 1.  Service Group reader <br>2.  Reader access to the resources within the service group |
 | Include/Exclude/Attest resources in the service group (after goal assignment) | 1.  Service Group contributor |
 | Rediscover resources in the service group | 1.  Service Group contributor <br>2.  Microsoft.Relationship/ServiceGroupMember/read access to the required resources under the service group |
